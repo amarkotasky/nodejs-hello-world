@@ -37,7 +37,7 @@ pipeline {
             steps {
  		       script{
 		    sh 'zip -r binary.zip *'
-            sh "aws s3 cp binary.zip s3://techkibrothers-artifacts-store/${env.BRANCH_NAME}/1.0.${env.BUILD_NUMBER}"
+            sh "aws s3 cp binary.zip s3://techkibrothers-artifacts-store/${env.BRANCH_NAME}/1.0.${env.BUILD_NUMBER}/"
             }
         }
         }
