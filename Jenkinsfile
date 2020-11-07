@@ -16,7 +16,7 @@ pipeline {
                 checkout scm
             }
         }
-	stage('Clean') {
+	stage('Install') {
             steps {		    
              sh 'npm install'
             }
